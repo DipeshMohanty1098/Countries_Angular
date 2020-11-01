@@ -1,0 +1,8 @@
+<select [(ngModel)] = 'selectedCountry' (change) = "getStates(selectedCountry)">
+    <option *ngFor = 'let country of countries' >{{country.country}}</option>
+</select>
+<br>
+<select>
+    <p>{{states}}</p>
+    <option *ngFor='let state of states' >{{state}}</option>
+</select>
